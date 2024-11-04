@@ -2,7 +2,7 @@
 // T9 text entry - test.c
 //
 // Wojciech Kaczmarski, SP5WWP
-// M17 Project, 4 October 2024
+// M17 Project, 4 November 2024
 //--------------------------------------------------------------------
 #include <stdio.h>
 #include "t9.h"
