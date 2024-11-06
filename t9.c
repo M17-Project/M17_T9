@@ -2,77 +2,56 @@
 // T9 text entry - t9.c
 //
 // Wojciech Kaczmarski, SP5WWP
-// M17 Project, 4 November 2024
+// M17 Project, 6 November 2024
 //--------------------------------------------------------------------
 #include "t9.h"
 
-uint8_t getDigit(char c)
+uint8_t getDigit(const char c)
 {
-    return "22233344455566677778889999"[c-'a']-'0'; //char-key map
+    return "22233344455566677778889999"[c-'a'];
 }
 
-node_t* createNode(void)
+char* getWord(char *dict, char *code)
 {
-    node_t *n = (node_t*)malloc(sizeof(node_t));
+    char *word = dict;
 
-    for(uint8_t i=0; i<8; i++)
-        n->branch[i]=NULL;
+    uint8_t code_len=strlen(code);
 
-    n->list=(list_t*)malloc(sizeof(list_t));
-    n->list->word=NULL;
-    n->list->next=NULL;
-
-    return n;
-}
-
-void addDict(node_t *root, char *word)
-{
-    node_t *curr = root;
-    list_t *list;
-    uint8_t len = strlen(word);
-
-    for(uint8_t i=0; i<len; i++)
+    //count asterisks
+    uint8_t depth=0;
+    for(uint8_t i=0; i<code_len; i++)
     {
-        uint8_t loc = getDigit(word[i])-2;
-        if(curr->branch[loc]==NULL)
+        if(code[i]=='*')
+            depth++;
+    }
+
+    do
+    {
+        if(strlen(word)==code_len)
         {
-            curr->branch[loc]=createNode();
+            //speed up the search a bit. TODO: there's room for improvement here
+            if(getDigit(word[0])>code[0])
+            {
+                break;
+            }
+            
+            uint8_t sum=0;
+
+            for(uint8_t i=0; i<code_len && sum==0; i++)
+            {
+                sum=getDigit(word[i])-code[i];
+            }
+            
+            if(sum==0)
+            {
+                if(depth==0)
+                    return word;
+                depth--;
+            }
         }
-        curr=curr->branch[loc];
-    }
 
-    list = curr->list;
-    while(list->next!=NULL)
-    {
-        list=list->next;
-    }
+        word += strlen(word)+1;
+    } while(strlen(word)!=0);
 
-    list->word=(char*)malloc(strlen(word));
-    strcpy(list->word, word);
-    list->next=(list_t*)malloc(sizeof(list_t));
-    list->next->word=NULL;
-    list->next->next=NULL;
-}
-
-char* getWord(node_t *root, char *code)
-{
-    node_t *curr = root;
-    list_t *list;
-    uint8_t len=strlen(code);
-
-    for(uint8_t i=0; i<len && code[i]!='*'; i++)
-    {
-        curr = curr->branch[(uint8_t)code[i]-'0'-2];
-    }
-
-    list=curr->list;
-
-    //use the asterisk key to access remaining entries
-    for(uint8_t i=0; i<len; i++)
-    {
-        if(code[i]=='*' && list->next->word!=NULL) //scan for asterisks, but stop at the last entry
-            list=list->next;
-    }
-
-    return list->word;
+    return "";
 }
