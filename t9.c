@@ -25,6 +25,9 @@ char* getWord(char *dict, char *code)
             depth++;
     }
 
+    //subtract the amount of asterisks from the code length
+    code_len-=depth;
+
     do
     {
         if(strlen(word)==code_len)
