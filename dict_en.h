@@ -222,6 +222,7 @@ aware\0\
 awareness\0\
 away\0\
 awful\0\
+b\0\
 baby\0\
 back\0\
 background\0\
@@ -367,6 +368,7 @@ button\0\
 buy\0\
 buyer\0\
 by\0\
+c\0\
 cabin\0\
 cabinet\0\
 cable\0\
@@ -491,6 +493,8 @@ coal\0\
 coalition\0\
 coast\0\
 coat\0\
+cock\0\
+cocks\0\
 code\0\
 coffee\0\
 cognitive\0\
@@ -670,7 +674,10 @@ curriculum\0\
 custom\0\
 customer\0\
 cut\0\
+cute\0\
+cum\0\
 cycle\0\
+d\0\
 dad\0\
 daily\0\
 damage\0\
@@ -752,6 +759,8 @@ development\0\
 device\0\
 devote\0\
 dialogue\0\
+dick\0\
+dicks\0\
 die\0\
 diet\0\
 differ\0\
@@ -830,10 +839,12 @@ driver\0\
 drop\0\
 drug\0\
 dry\0\
+dude\0\
 due\0\
 during\0\
 dust\0\
 duty\0\
+e\0\
 each\0\
 eager\0\
 ear\0\
@@ -1000,6 +1011,7 @@ extraordinary\0\
 extreme\0\
 extremely\0\
 eye\0\
+f\0\
 fabric\0\
 face\0\
 facility\0\
@@ -1067,6 +1079,7 @@ finger\0\
 finish\0\
 fire\0\
 firm\0\
+firmware\0\
 first\0\
 fish\0\
 fishing\0\
@@ -1129,6 +1142,7 @@ from\0\
 front\0\
 fruit\0\
 frustration\0\
+fuck\0\
 fuel\0\
 full\0\
 fully\0\
@@ -1142,6 +1156,7 @@ funny\0\
 furniture\0\
 furthermore\0\
 future\0\
+g\0\
 gain\0\
 galaxy\0\
 gallery\0\
@@ -1185,6 +1200,7 @@ glove\0\
 go\0\
 goal\0\
 god\0\
+going\0\
 gold\0\
 golden\0\
 golf\0\
@@ -1221,6 +1237,7 @@ guideline\0\
 guilty\0\
 gun\0\
 guy\0\
+h\0\
 habit\0\
 habitat\0\
 hair\0\
@@ -1440,9 +1457,11 @@ italian\0\
 item\0\
 its\0\
 itself\0\
+j\0\
 jacket\0\
 jail\0\
 japanese\0\
+jerk\0\
 jet\0\
 jew\0\
 jewish\0\
@@ -1463,6 +1482,7 @@ jury\0\
 just\0\
 justice\0\
 justify\0\
+k\0\
 keep\0\
 key\0\
 kick\0\
@@ -1479,6 +1499,7 @@ knife\0\
 knock\0\
 know\0\
 knowledge\0\
+l\0\
 lab\0\
 label\0\
 labor\0\
@@ -1546,6 +1567,7 @@ limit\0\
 limitation\0\
 limited\0\
 line\0\
+lines\0\
 link\0\
 lip\0\
 list\0\
@@ -1581,6 +1603,7 @@ luck\0\
 lucky\0\
 lunch\0\
 lung\0\
+m\0\
 machine\0\
 mad\0\
 magazine\0\
@@ -1672,7 +1695,6 @@ mission\0\
 mistake\0\
 mix\0\
 mixture\0\
-mm-hmm\0\
 mode\0\
 model\0\
 moderate\0\
@@ -1721,6 +1743,7 @@ my\0\
 myself\0\
 mystery\0\
 myth\0\
+n\0\
 naked\0\
 name\0\
 narrative\0\
@@ -1779,12 +1802,12 @@ notion\0\
 novel\0\
 now\0\
 nowhere\0\
-n't\0\
 nuclear\0\
 number\0\
 numerous\0\
 nurse\0\
 nut\0\
+o\0\
 object\0\
 objective\0\
 obligation\0\
@@ -1833,6 +1856,7 @@ operating\0\
 operation\0\
 operator\0\
 opinion\0\
+opnrtx\0\
 opponent\0\
 opportunity\0\
 oppose\0\
@@ -1867,6 +1891,7 @@ overlook\0\
 owe\0\
 own\0\
 owner\0\
+p\0\
 pace\0\
 pack\0\
 package\0\
@@ -2116,8 +2141,10 @@ purpose\0\
 pursue\0\
 push\0\
 put\0\
+q\0\
 qualify\0\
 quality\0\
+quantum\0\
 quarter\0\
 quarterback\0\
 question\0\
@@ -2128,6 +2155,7 @@ quietly\0\
 quit\0\
 quite\0\
 quote\0\
+r\0\
 race\0\
 racial\0\
 radical\0\
@@ -2288,11 +2316,14 @@ routine\0\
 row\0\
 rub\0\
 rule\0\
+rules\0\
+rulez\0\
 run\0\
 running\0\
 rural\0\
 rush\0\
 russian\0\
+s\0\
 sacred\0\
 sad\0\
 safe\0\
@@ -2332,6 +2363,8 @@ score\0\
 scream\0\
 screen\0\
 script\0\
+scum\0\
+scumbag\0\
 sea\0\
 search\0\
 season\0\
@@ -2496,7 +2529,9 @@ south\0\
 southern\0\
 soviet\0\
 space\0\
+span\0\
 spanish\0\
+spanning\0\
 speak\0\
 speaker\0\
 special\0\
@@ -2587,6 +2622,7 @@ success\0\
 successful\0\
 successfully\0\
 such\0\
+suck\0\
 sudden\0\
 suddenly\0\
 sue\0\
@@ -2631,6 +2667,7 @@ switch\0\
 symbol\0\
 symptom\0\
 system\0\
+t\0\
 table\0\
 tablespoon\0\
 tactic\0\
@@ -2806,6 +2843,7 @@ two\0\
 type\0\
 typical\0\
 typically\0\
+u\0\
 ugly\0\
 ultimate\0\
 ultimately\0\
@@ -2843,6 +2881,7 @@ user\0\
 usual\0\
 usually\0\
 utility\0\
+v\0\
 vacation\0\
 valley\0\
 valuable\0\
@@ -2888,6 +2927,7 @@ vote\0\
 voter\0\
 vs\0\
 vulnerable\0\
+w\0\
 wage\0\
 wait\0\
 wake\0\
@@ -2934,6 +2974,7 @@ whereas\0\
 whether\0\
 which\0\
 while\0\
+whine\0\
 whisper\0\
 white\0\
 who\0\
@@ -2987,6 +3028,9 @@ write\0\
 writer\0\
 writing\0\
 wrong\0\
+x\0\
+xylophone\0\
+y\0\
 yard\0\
 yeah\0\
 year\0\
@@ -3002,6 +3046,7 @@ your\0\
 yours\0\
 yourself\0\
 youth\0\
+z\0\
 zone\0\
 \0\
 ";
