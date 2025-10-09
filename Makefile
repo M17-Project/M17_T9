@@ -23,6 +23,7 @@ install:
 	sudo install $(TARGET) /usr/lib
 	sudo \cp t9.h /usr/include
 	sudo chmod 644 /usr/include/t9.h
+	sudo ldconfig
 
 $(TARGET): t9.h $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o $@ $(LDFLAGS)
