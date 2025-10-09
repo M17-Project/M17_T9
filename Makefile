@@ -28,4 +28,4 @@ install:
 $(TARGET): t9.h $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o $@ $(LDFLAGS)
 
-.PHONY: all clean test testrun install
+.PHONY: all clean fclean test testrun install
