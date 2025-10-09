@@ -6,7 +6,7 @@
 //--------------------------------------------------------------------
 #include <stdio.h>
 
-#include "t9.h"
+#include <t9.h>
 #include "dict_en.h"
 
 int main(void)
