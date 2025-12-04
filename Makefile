@@ -14,7 +14,7 @@ fclean:
 	rm -f $(TARGET)
 
 test:
-	$(CC) $(CFLAGS) test.c -o test -lt9
+	$(CC) $(CFLAGS) t9.c test.c -o test
 
 testrun:
 	./test
