@@ -2,31 +2,63 @@
 // T9 text entry - test.c
 //
 // Wojciech Kaczmarski, SP5WWP
-// M17 Project, 4 November 2024
+// M17 Project, 6 November 2024
 //--------------------------------------------------------------------
 #include <stdio.h>
+
+#ifdef __has_include
+#if __has_include(<sys/time.h>)
+#include <sys/time.h>
+#else
+#include <time.h>
+#endif
+#else
+#if defined(__unix__) || defined(__APPLE__) || defined(__linux__)
+#include <sys/time.h>
+#else
+#include <time.h>
+#endif
+#endif
+
 #include "t9.h"
+#include "dict_en.h"
+
+char *w;
 
 int main(void)
 {
-    //initialize a tree for the English dictionary
-    node_t *dict_en = createNode();
+    // show the dictionary size
+    printf("Dict size: %llu bytes\n", sizeof(dict_en));
 
-    //load the word list
-    char word[32]="";
-    FILE *fp = fopen("wordlist.txt", "r");
-    while(fgets(word, sizeof(word), fp)!=NULL)
+    // benchmark - 1mil operations
+    struct timeval tv[2];
+    #if defined(__MINGW32__) || defined(__MINGW64__)
+    mingw_gettimeofday(&tv[0], NULL);
+    #else
+    gettimeofday(&tv[0], NULL);
+    #endif
+
+    for (uint32_t i = 0; i < 1000; i++)
     {
-        word[strlen(word)-1]=0; //remove trailing newline char
-        addDict(dict_en, word);
+        w = getWord(dict_en, "43556"); // "hello"
     }
-    fclose(fp);
 
-    //decode some words
-    printf("getWord: %s\n", getWord(dict_en, "6736789"));
-    printf("getWord: %s\n", getWord(dict_en, "47**"));
-    printf("         %s\n", "T9");
-    printf("getWord: %s\n", getWord(dict_en, "73239"));
+    #if defined(__MINGW32__) || defined(__MINGW64__)
+    mingw_gettimeofday(&tv[1], NULL);
+    #else
+    gettimeofday(&tv[1], NULL);
+    #endif
+
+    uint64_t t = (uint64_t)(tv[1].tv_sec - tv[0].tv_sec) * 1000000ULL + (uint64_t)(tv[1].tv_usec - tv[0].tv_usec);
+
+    printf("Time: %llu.%06llu seconds\n", t / 1000000ULL, t % 1000000ULL);
+
+    // print some text
+    printf("Test: ");
+    printf("%s ", getWord(dict_en, "43556"));    // hello
+    printf("%s ", getWord(dict_en, "8447"));     // this
+    printf("%s ", getWord(dict_en, "47"));       // is
+    printf("%s\n", getWord(dict_en, "6736789")); // openrtx
 
     return 0;
 }
