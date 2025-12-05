@@ -1,3 +1,5 @@
 *.o
 *.so
-test
+tests/*
+!tests/*.c
+*.vscode

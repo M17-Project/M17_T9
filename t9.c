@@ -37,8 +37,8 @@ char *getWord(char *dict, char *code)
 
         if (wlen == code_len)
         {
-            //speed up the search a bit. TODO: there's room for improvement here
-            if(getDigit(word[0])>code[0])
+            // speed up the search a bit. TODO: there's room for improvement here
+            if (getDigit(word[0]) > code[0])
             {
                 break;
             }
