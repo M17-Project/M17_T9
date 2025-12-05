@@ -219,6 +219,7 @@ aware
 awareness
 away
 awful
+b
 baby
 back
 background
@@ -364,6 +365,7 @@ button
 buy
 buyer
 by
+c
 cabin
 cabinet
 cable
@@ -488,6 +490,8 @@ coal
 coalition
 coast
 coat
+cock
+cocks
 code
 coffee
 cognitive
@@ -667,7 +671,10 @@ curriculum
 custom
 customer
 cut
+cute
+cum
 cycle
+d
 dad
 daily
 damage
@@ -749,6 +756,8 @@ development
 device
 devote
 dialogue
+dick
+dicks
 die
 diet
 differ
@@ -827,10 +836,12 @@ driver
 drop
 drug
 dry
+dude
 due
 during
 dust
 duty
+e
 each
 eager
 ear
@@ -997,6 +1008,7 @@ extraordinary
 extreme
 extremely
 eye
+f
 fabric
 face
 facility
@@ -1064,6 +1076,7 @@ finger
 finish
 fire
 firm
+firmware
 first
 fish
 fishing
@@ -1126,6 +1139,7 @@ from
 front
 fruit
 frustration
+fuck
 fuel
 full
 fully
@@ -1139,6 +1153,7 @@ funny
 furniture
 furthermore
 future
+g
 gain
 galaxy
 gallery
@@ -1182,6 +1197,7 @@ glove
 go
 goal
 god
+going
 gold
 golden
 golf
@@ -1218,6 +1234,7 @@ guideline
 guilty
 gun
 guy
+h
 habit
 habitat
 hair
@@ -1437,9 +1454,11 @@ italian
 item
 its
 itself
+j
 jacket
 jail
 japanese
+jerk
 jet
 jew
 jewish
@@ -1460,6 +1479,7 @@ jury
 just
 justice
 justify
+k
 keep
 key
 kick
@@ -1476,6 +1496,7 @@ knife
 knock
 know
 knowledge
+l
 lab
 label
 labor
@@ -1543,6 +1564,7 @@ limit
 limitation
 limited
 line
+lines
 link
 lip
 list
@@ -1578,6 +1600,7 @@ luck
 lucky
 lunch
 lung
+m
 machine
 mad
 magazine
@@ -1669,7 +1692,6 @@ mission
 mistake
 mix
 mixture
-mm-hmm
 mode
 model
 moderate
@@ -1718,6 +1740,7 @@ my
 myself
 mystery
 myth
+n
 naked
 name
 narrative
@@ -1776,12 +1799,12 @@ notion
 novel
 now
 nowhere
-n't
 nuclear
 number
 numerous
 nurse
 nut
+o
 object
 objective
 obligation
@@ -1830,6 +1853,7 @@ operating
 operation
 operator
 opinion
+opnrtx
 opponent
 opportunity
 oppose
@@ -1864,6 +1888,7 @@ overlook
 owe
 own
 owner
+p
 pace
 pack
 package
@@ -2113,8 +2138,10 @@ purpose
 pursue
 push
 put
+q
 qualify
 quality
+quantum
 quarter
 quarterback
 question
@@ -2125,6 +2152,7 @@ quietly
 quit
 quite
 quote
+r
 race
 racial
 radical
@@ -2285,11 +2313,14 @@ routine
 row
 rub
 rule
+rules
+rulez
 run
 running
 rural
 rush
 russian
+s
 sacred
 sad
 safe
@@ -2329,6 +2360,8 @@ score
 scream
 screen
 script
+scum
+scumbag
 sea
 search
 season
@@ -2493,7 +2526,9 @@ south
 southern
 soviet
 space
+span
 spanish
+spanning
 speak
 speaker
 special
@@ -2584,6 +2619,7 @@ success
 successful
 successfully
 such
+suck
 sudden
 suddenly
 sue
@@ -2628,6 +2664,7 @@ switch
 symbol
 symptom
 system
+t
 table
 tablespoon
 tactic
@@ -2803,6 +2840,7 @@ two
 type
 typical
 typically
+u
 ugly
 ultimate
 ultimately
@@ -2840,6 +2878,7 @@ user
 usual
 usually
 utility
+v
 vacation
 valley
 valuable
@@ -2885,6 +2924,7 @@ vote
 voter
 vs
 vulnerable
+w
 wage
 wait
 wake
@@ -2931,6 +2971,7 @@ whereas
 whether
 which
 while
+whine
 whisper
 white
 who
@@ -2984,6 +3025,9 @@ write
 writer
 writing
 wrong
+x
+xylophone
+y
 yard
 yeah
 year
@@ -2999,4 +3043,5 @@ your
 yours
 yourself
 youth
+z
 zone
