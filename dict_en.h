@@ -1,4 +1,5 @@
-#pragma once
+#ifndef DICT_EN_H
+#define DICT_EN_H
 
 char dict_en[] = "\
 a\0\
@@ -3050,3 +3051,5 @@ z\0\
 zone\0\
 \0\
 ";
+
+#endif
