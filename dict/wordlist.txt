@@ -67,7 +67,6 @@ affect
 afford
 afraid
 african
-african-american
 after
 afternoon
 again
@@ -112,6 +111,7 @@ amazing
 american
 among
 amount
+an
 analysis
 analyst
 analyze
@@ -887,7 +887,6 @@ eliminate
 elite
 else
 elsewhere
-e-mail
 embrace
 emerge
 emergency
@@ -1582,7 +1581,6 @@ locate
 location
 lock
 long
-long-term
 look
 loose
 lose
@@ -2492,7 +2490,6 @@ smooth
 snap
 snow
 so
-so-called
 soccer
 social
 society

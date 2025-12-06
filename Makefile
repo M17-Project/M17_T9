@@ -1,9 +1,6 @@
 TARGET  = libt9.so
 
 CFLAGS  = $(INC) -fPIC -Wall -Wextra
-ifneq ($(SEARCH),)
-	CFLAGS += -D$(SEARCH)
-endif
 LDFLAGS = -shared
 SRCS    = t9.c
 OBJS    = $(SRCS:.c=.o)
@@ -17,7 +14,7 @@ fclean:
 	rm -f $(TARGET)
 
 test:
-	$(CC) $(CFLAGS) t9.c ./tests/test.c -o ./tests/test
+	$(CC) $(INC) -Wall -Wextra t9.c ./tests/test.c -o ./tests/test
 
 testrun:
 	./tests/test

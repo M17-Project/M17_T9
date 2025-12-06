@@ -71,7 +71,6 @@ affect\0\
 afford\0\
 afraid\0\
 african\0\
-african-american\0\
 after\0\
 afternoon\0\
 again\0\
@@ -116,6 +115,7 @@ amazing\0\
 american\0\
 among\0\
 amount\0\
+an\0\
 analysis\0\
 analyst\0\
 analyze\0\
@@ -891,7 +891,6 @@ eliminate\0\
 elite\0\
 else\0\
 elsewhere\0\
-e-mail\0\
 embrace\0\
 emerge\0\
 emergency\0\
@@ -1586,7 +1585,6 @@ locate\0\
 location\0\
 lock\0\
 long\0\
-long-term\0\
 look\0\
 loose\0\
 lose\0\
@@ -2496,7 +2494,6 @@ smooth\0\
 snap\0\
 snow\0\
 so\0\
-so-called\0\
 soccer\0\
 social\0\
 society\0\

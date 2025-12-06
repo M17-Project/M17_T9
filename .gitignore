@@ -3,3 +3,5 @@
 tests/*
 !tests/*.c
 *.vscode
+dict/*
+!dict/wordlist.txt
