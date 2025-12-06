@@ -5,3 +5,4 @@ tests/*
 *.vscode
 dict/*
 !dict/wordlist.txt
+!dict/*.h
