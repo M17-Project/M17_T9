@@ -50,6 +50,9 @@ A test program is built from `/tests/test.c`.
 ## Usage example
 ```C
 #include <t9.h>
+#include "dict_en.h"         // for the linear search
+#include "dict_en_sorted.h"  // for the log search
+#include "dict_en_offsets.h" // for the log search
 
 // returns the second word matching T9 code "227"...
 // ...using linear search
