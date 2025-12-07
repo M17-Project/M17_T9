@@ -1,7 +1,7 @@
 #ifndef DICT_EN_H
 #define DICT_EN_H
 
-char dict[] = "\
+const char dict[] = "\
 a\0\
 abandon\0\
 ability\0\

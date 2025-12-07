@@ -4,7 +4,7 @@
 #include <stdint.h>
 #define DICT_EN_WC 3044
 
-uint16_t dict_offsets[DICT_EN_WC-1] =
+const uint16_t dict_offsets[DICT_EN_WC-1] =
 {
 	2,
 	4,

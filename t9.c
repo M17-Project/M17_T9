@@ -2,7 +2,7 @@
 // T9 text entry - t9.c
 //
 // Wojciech Kaczmarski, SP5WWP
-// M17 Project, 6 December 2025
+// M17 Project, 7 December 2025
 //--------------------------------------------------------------------
 #include "t9.h"
 
@@ -35,7 +35,7 @@ uint8_t countAsterisks(const char *code, uint8_t len)
 // NOTE: use with alphabetically sorted dictionary *only*
 // TODO: too many asterisks will make the function return the last matching entry
 //       this happens when the size of T9 collision cluster is smaller than the number of asterisks
-char *getWord(const char *dict, const char *code)
+const char *getWord(const char *dict, const char *code)
 {
     uint8_t code_len = strlen(code);
 
@@ -53,8 +53,8 @@ char *getWord(const char *dict, const char *code)
     if (code_len == 0)
         return "";
 
-    char *word = (char *)dict;
-    char *lastword = "";
+    const char *word = dict;
+    const char *lastword = "";
 
     // word length
     uint8_t wlen = 0;
@@ -191,7 +191,7 @@ uint8_t countBlock(const char *dict, uint16_t dict_size, const uint16_t *offsets
 }
 
 // cycle through all words with matching T9 code
-char *getWordCycling(const char *dict, uint16_t dict_size, const uint16_t *offsets, const char *code, uint8_t code_len, uint8_t depth)
+const char *getWordCycling(const char *dict, uint16_t dict_size, const uint16_t *offsets, const char *code, uint8_t code_len, uint8_t depth)
 {
     // local copy of the code
     char c[T9_MAX_CODE_LEN] = "";
@@ -211,12 +211,12 @@ char *getWordCycling(const char *dict, uint16_t dict_size, const uint16_t *offse
     uint16_t idx = first + (depth % block_len);
 
     // return the word at this index
-    return (char *)(&dict[idx == 0 ? 0 : offsets[idx - 1]]);
+    return &dict[idx == 0 ? 0 : offsets[idx - 1]];
 }
 
 // find T9 code in the dictionary using log search
 // NOTE: use with lexicographically sorted T9 dictionary *only*
-char *getWordLog(const char *dict, uint16_t dict_size, const uint16_t *offsets, const char *code)
+const char *getWordLog(const char *dict, uint16_t dict_size, const uint16_t *offsets, const char *code)
 {
     uint8_t code_len = strlen(code);
 

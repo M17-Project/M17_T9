@@ -24,7 +24,7 @@ with open(OUTPUT, "w", encoding="utf-8") as out:
     out.write("#include <stdint.h>\n")
     out.write(f"#define DICT_EN_WC {word_count}\n\n")
 
-    out.write(f"uint16_t dict_offsets[DICT_EN_WC-1] =\n{{\n")
+    out.write(f"const uint16_t dict_offsets[DICT_EN_WC-1] =\n{{\n")
 
     for off in offsets:
         out.write(f"\t{off},\n")

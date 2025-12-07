@@ -1,7 +1,7 @@
 #ifndef DICT_EN_SORTED_H
 #define DICT_EN_SORTED_H
 
-char dict_sorted[] = "\
+const char dict_sorted[] = "\
 a\0\
 b\0\
 c\0\

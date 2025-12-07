@@ -25,7 +25,7 @@
 #include "../dict/dict_en_sorted.h"
 #include "../dict/dict_en_offsets.h"
 
-char *w;
+const char *w;
 struct timeval tv[2];
 uint64_t t;
 

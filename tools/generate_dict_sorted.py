@@ -12,7 +12,7 @@ with open(OUTPUT, "w", encoding="utf-8") as out:
     out.write(f"#ifndef {header_guard}\n")
     out.write(f"#define {header_guard}\n\n")
 
-    out.write("char dict_sorted[] = \"\\\n")
+    out.write("const char dict_sorted[] = \"\\\n")
 
     for w in words:
         out.write(f"{w}\\0\\\n")
