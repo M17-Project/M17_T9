@@ -529,6 +529,7 @@ crash\0\
 apart\0\
 apartment\0\
 crazy\0\
+are\0\
 area\0\
 bread\0\
 break\0\

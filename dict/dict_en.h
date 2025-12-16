@@ -159,6 +159,7 @@ approve\0\
 approximately\0\
 arab\0\
 architect\0\
+are\0\
 area\0\
 argue\0\
 argument\0\
